@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-root to:"prototypes#index"
+  root to: 'tweets#index'
+  resources :prototypes, only: :index
 end
+  

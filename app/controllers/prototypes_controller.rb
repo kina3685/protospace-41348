@@ -3,6 +3,6 @@ def
   
   def show
     user = User.find(params[:id])
-    @user = user.!'ユーザー名'
+    @user = user.name
   end
 end

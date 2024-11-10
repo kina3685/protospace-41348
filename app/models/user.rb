@@ -11,7 +11,11 @@ class User < ApplicationRecord
 
   # 役職も必須
   validates :position, presence: true
-  
+
+  @name=name
+
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
+
+         has_many :prototypes
 end
